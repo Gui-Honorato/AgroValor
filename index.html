@@ -1,1 +1,166 @@
-<h1>Ola Mundo</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroValor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      padding: 2rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    form button {
+      margin-top: 1.5rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #45a049;
+    }
+    .highlight-section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .highlight-section h2 {
+      color: #4CAF50;
+      text-align: center;
+    }
+    .highlight-section p, .highlight-section ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .highlight-section ul {
+      padding-left: 1.5rem;
+    }
+    .highlight-section li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AgroValor</h1>
+    <p>Plataforma para divulgação de produtos agroinovadores</p>
+    <nav>
+      <a href="#home">Início</a>
+      <a href="#produtores">Produtores</a>
+      <a href="#boas-praticas">Boas Práticas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="highlight-section">
+      <h2>Sobre o Projeto</h2>
+      <p>O <strong>AgroValor</strong> é uma iniciativa de extensão tecnológica com o objetivo de divulgar produtos sustentáveis e inovadores da agricultura familiar em parceria com o Instituto Centro de Vida (ICV). Através desta plataforma, buscamos fortalecer a visibilidade de pequenos produtores que utilizam práticas ambientalmente responsáveis, agregando valor às suas produções e promovendo o desenvolvimento local.</p>
+    </section>
+  </main>
+
+  <main id="produtores">
+    <h2>Produtores e Produtos</h2>
+    <div class="card">
+      <h3>João da Silva</h3>
+      <p><strong>Produto:</strong> Castanha-do-Brasil beneficiada</p>
+      <p><strong>Localização:</strong> Alta Floresta - MT</p>
+      <p><strong>Contato:</strong> joaosilva@exemplo.com | (66) 91234-5678</p>
+    </div>
+    <div class="card">
+      <h3>Maria Oliveira</h3>
+      <p><strong>Produto:</strong> Mel silvestre orgânico</p>
+      <p><strong>Localização:</strong> Cotriguaçu - MT</p>
+      <p><strong>Contato:</strong> maria.oliveira@exemplo.com | (66) 99876-5432</p>
+    </div>
+  </main>
+
+  <main id="boas-praticas">
+    <section class="highlight-section">
+      <h2>Boas Práticas Sustentáveis</h2>
+      <p>Conheça algumas técnicas e práticas recomendadas que contribuem para a sustentabilidade na agricultura familiar e agregam valor aos produtos:</p>
+      <ul>
+        <li>Utilização de biofertilizantes e insumos naturais</li>
+        <li>Implantação de sistemas agroflorestais e consórcios de culturas</li>
+        <li>Processamento artesanal com foco em qualidade e segurança alimentar</li>
+        <li>Embalagens ecológicas e marketing de origem sustentável</li>
+        <li>Organização em cooperativas e associações de produtores</li>
+      </ul>
+    </section>
+  </main>
+
+  <main id="contato">
+    <h2>Contato</h2>
+    <p style="text-align: center;">Para dúvidas ou para cadastrar um novo produtor, envie uma mensagem:</p>
+    <form action="https://formspree.io/f/meqbgvnl" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgroValor | Projeto de Extensão - Curso de ADS</p>
+  </footer>
+</body>
+</html>
